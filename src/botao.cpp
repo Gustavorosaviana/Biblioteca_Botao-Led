@@ -15,9 +15,9 @@ void Botao::atualizar(){
     _pressionou = false;
     _soltou = false;
     
-    bool _estadoAtualBotao = digitalRead(_pinBotao);
+    _estadoAtualBotao = digitalRead(_pinBotao);
     
-    if(_estadoAnteriorBotao != _estadoAtualBotao){
+    if(_estadoAtualBotao != _estadoAnteriorBotao){
         _estadoAnteriorBotao = _estadoAtualBotao;
         _ultimaMudanca_ms = millis();
     }
