@@ -15,6 +15,7 @@ class Botao{
         uint32_t _ultimaMudanca_ms = 0;
         uint32_t _tempoDebounce_ms = 20;
         bool _estadoUltimaAcao = HIGH;
+        uint32_t _tempoDecorrido();
 
 
     public:
